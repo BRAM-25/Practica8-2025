@@ -1,11 +1,9 @@
 //Abraham Zuñiga
-// ejercicio1
+// ejercicio2
 //programa que muestre en pantalla los números enteros del 1 al 100.
-
-
 #include <stdio.h>
 
-void main() 
+int main() 
 {
     for (int i = 1; i <= 100; i++) 
     {
