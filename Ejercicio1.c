@@ -3,26 +3,34 @@
 //programa para validar que un numero sea par o imppar*/
 #include <stdio.h>
 
-void main()
+int main() 
 {
-    int npar, impar, n, cont=1;
-    printf("dame el numero de cifras a buscar: ");
-    scanf("%d" &n);
-    printf("\nUso del wile\n")
-    
-    while(cont<n)
+    int par = 0, impar = 0, n, cont = 1;
+
+    printf("Dame el número de cifras a buscar: ");
+    scanf("%d", &n);
+
+    printf("\nUso del while\n");
+
+    while (cont <= n) 
     {
-        if(cont % 2 == 0)
+        if (cont % 2 == 0) 
+        
         {
             par = cont;
-        }
-        else
+        } 
+        
+        else 
+        
         {
-            impar=cont;
+            impar = cont;
         }
-        cont ++;
+        
+        cont++;
     }
-    while (cont<=n);
-    printf("el ultimo numero par es: %d\n",par);
-    printf("el ultimo numero impar es: %d\n",impar);
-} 
+
+    printf("El último número par es: %d\n", par);
+    printf("El último número impar es: %d\n", impar);
+
+    return 0;
+}
